@@ -11,4 +11,12 @@ function debounce(func, wait = 20, immediate = true) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
+
+  const sliderImages = document.querySelectorAll('.slide-in');
+
+  function checkSlide(e) {
+    console.log(e);
+  }
+
+  window.addEventListener('scroll', checkSlide);
 }
